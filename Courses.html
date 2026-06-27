@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Training Courses - Community Aid</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        .courses-hero {
+            background: linear-gradient(rgba(8, 19, 79, 0.75), rgba(5, 10, 98, 0.75)), url('https://unsplash.com') no-repeat center center/cover;
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .courses-hero h1 { font-size: 3rem; margin-bottom: 10px; font-weight: bold; }
+        .courses-hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.9; }
+        
+        .main-section { max-width: 1200px; margin: 60px auto; padding: 0 20px; text-align: center; }
+        .section-title { font-size: 2.2rem; color: #001a33; margin-bottom: 10px; font-weight: bold; }
+        .section-subtitle { font-size: 1.1rem; color: #666666; margin-bottom: 40px; }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .course-card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            overflow: hidden;
+            text-align: left;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .course-img { width: 100%; height: 200px; object-fit: cover; }
+        .course-body { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        .course-meta { color: #888888; font-size: 0.85rem; margin-bottom: 10px; }
+        .course-title { font-size: 1.3rem; color: #001a33; margin-bottom: 12px; font-weight: bold; }
+        .course-desc { color: #555555; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px; }
+        
+        .badge-pill {
+            position: absolute;
+            bottom: 130px;
+            right: 20px;
+            background: #001a33;
+            color: #ffffff;
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .card-btn {
+            background: #ffc107;
+            color: #000000;
+            text-align: center;
+            padding: 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: auto;
+            transition: background 0.2s;
+        }
+        .card-btn:hover { background: #e0a800; }
+        
+        footer { background-color: #001a33; color: #ffffff; padding: 40px 20px; text-align: center; }
+        .footer-grid { max-width: 1100px; margin: 0 auto 30px auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: left; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; text-align: center; } }
+        .footer-col h4 { margin-bottom: 15px; font-size: 1.2rem; color: #ffc107; }
+        .footer-col a { color: #ffffff; display: block; margin-bottom: 10px; text-decoration: none; opacity: 0.8; }
+        .footer-col a:hover { opacity: 1; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <!-- NAV HEADER -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+        <div class="logo" style="font-weight: bold; font-size: 1.5rem; color: #001a33;">COMMUNITY AID</div>
+        <nav>
+            <a href="index.html" style="margin: 0 15px; text-decoration: none; color: #001a33; font-weight: 500;">Home</a>
+            <a href="about.html" style="margin: 0 15px; text-decoration: none; color: #001a33; font-weight: 500;">About Us</a>
+            <a href="blog.html" style="margin: 0 15px; text-decoration: none; color: #001a33; font-weight: 500;">Blog</a>
+            <a href="courses.html" style="margin: 0 15px; text-decoration: none; color: #ffc107; font-weight: bold;">Courses</a>
+            <a href="contact.html" style="margin: 0 15px; text-decoration: none; color: #001a33; font-weight: 500;">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="courses-hero">
+        <h1>Volunteer Training & Education</h1>
+        <p>Equip yourself with the tools, safety guidelines, and leadership protocols required to organize community drives and support local relief campaigns.</p>
+    </section>
+
+    <!-- MAIN GRID SECTION -->
+    <main class="main-section">
+        <h2 class="section-title">Available Training Modules</h2>
+        <p class="section-subtitle">Learn how to make a strategic impact in your neighborhood.</p>
+        
+        <div class="grid-container">
+            <!-- Course 1 -->
+            <div class="course-card">
+                <img src="img/help111.jpg" alt="Disaster Relief" class="course-img">
+                <div class="badge-pill">FREE</div>
+                <div class="course-body">
+                    <div class="course-meta">Updated 25/6/26 • 1.5 Hours</div>
+                    <div class="course-title">Disaster Relief Operations 101</div>
+                    <p class="course-desc">Master the protocols for handling inventory, assessing safe operational boundaries, and distributing basic emergency items post-crisis.</p>
+                    <a href="#" class="card-btn">Enroll For Free</a>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="course-card">
+                <img src="img/Food give.jpeg" alt="Food Drive" class="course-img">
+                <div class="badge-pill">FREE</div>
+                <div class="course-body">
+                    <div class="course-meta">Updated 25/6/26 • 2 Hours</div>
+                    <div class="course-title">Organizing Local Food Drives</div>
+                    <p class="course-desc">A structured step-by-step layout guide to setting up community kitchens, handling logistics safely, and mapping drop-off locations.</p>
+                    <a href="#" class="card-btn">Enroll For Free</a>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="course-card">
+                <img src="img/DALL·E-2024-12-01-08.05.43-A-wide-feature-image-illustrating-the-importance-of-mental-health-awareness-in-first-responder-training.-The-scene-features-a-diverse-group-of-first-r.webp" alt="Counseling" class="course-img">
+                <div class="badge-pill">FREE</div>
+                <div class="course-body">
+                    <div class="course-meta">Updated 25/6/26 • 3 Hours</div>
+                    <div class="course-title">First-Responder Mental Wellness</div>
+                    <p class="course-desc">Learn critical active-listening strategies and psychological care frameworks to ethically support families recovering from severe loss.</p>
+                    <a href="#" class="card-btn">Enroll For Free</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <a href="blog.html">Our Blog</a>
+                <a href="courses.html">Training Courses</a>
+            </div>
+            <div class="footer-col">
+                <h4>Our Mission</h4>
+                <p style="font-size: 0.9rem; opacity: 0.8; line-height: 1.5; margin: 0;">Bridging the gap between active donors and regional communities requiring transparency, aid, and essential education.</p>
+            </div>
+        </div>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin-bottom: 20px;">
+        <p style="font-size: 0.9rem; opacity: 0.7; margin: 0;">&copy; 2026 Community Aid Platform. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

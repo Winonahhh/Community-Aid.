@@ -1,0 +1,108 @@
+:root {
+  --primary: #f59e0b;
+  --dark-navy: #031b33;
+  --bg-gradient: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+  --text-dark: #1e293b;
+  --text-slate: #64748b;
+}
+
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+html, body { 
+  background-color: #f8fafc; 
+  color: var(--text-dark); 
+  scroll-behavior: smooth; 
+  /* Pure CSS Pointer Override */
+  cursor: url('https://postimg.cc'), auto;
+}
+
+/* Hover Pointer Swap Configuration */
+a, button, select, textarea, input, .card, .btn, .card-btn, .c-card, .team-card { 
+  cursor: url('https://postimg.cc'), pointer !important; 
+}
+
+/* ========================================================
+   NAVIGATION MENU BAR
+   ======================================================== */
+.navbar {
+  height: 75px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar .logo { font-size: 1.3rem; font-weight: 700; color: var(--dark-navy); letter-spacing: 0.5px; }
+.nav-links a { text-decoration: none; color: var(--text-slate); margin-left: 25px; font-weight: 500; transition: 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--primary); }
+
+/* ========================================================
+   HERO HEADERS (INDEX SETUP)
+   ======================================================== */
+.hero { background: var(--bg-gradient); padding: 100px 10%; text-align: center; color: #f8fafc; }
+.hero-content { max-width: 800px; margin: 0 auto; }
+.hero h1 { font-size: 3rem; margin-bottom: 20px; font-weight: 800; letter-spacing: -0.04em; }
+.hero p { font-size: 1.15rem; line-height: 1.6; margin-bottom: 35px; color: #cbd5e1; }
+.hero-btns { display: flex; justify-content: center; gap: 15px; }
+
+/* REUSABLE ACTIONS BUTTONS */
+.btn { padding: 12px 28px; border-radius: 6px; font-weight: 600; text-decoration: none; transition: 0.2s; }
+.btn-primary { background: var(--primary); color: var(--dark-navy); }
+.btn-primary:hover { background: #d97706; }
+.btn-secondary { border: 2px solid #ffffff; color: #ffffff; }
+.btn-secondary:hover { background: #ffffff; color: var(--dark-navy); }
+
+/* MEASURABLE STATISTICS GRID CONTAINER */
+.metrics { display: flex; justify-content: space-around; max-width: 1000px; margin: -40px auto 60px auto; background: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); text-align: center; }
+.metric-card h3 { font-size: 2.2rem; color: var(--dark-navy); margin-bottom: 5px; }
+.metric-card p { color: var(--text-slate); font-size: 0.95rem; font-weight: 500; }
+
+/* ========================================================
+   CAMPAIGN APPEALS GRID
+   ======================================================== */
+.appeals-section { padding: 0 10% 80px 10%; }
+.section-header { text-align: center; margin-bottom: 50px; }
+.section-header h2 { font-size: 2rem; color: var(--dark-navy); margin-bottom: 10px; }
+.section-header p { color: var(--text-slate); }
+
+.grid { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; }
+.card { background: #ffffff; border-radius: 8px; width: 350px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+.card-img { width: 100%; height: 200px; object-fit: cover; }
+.card-body { padding: 25px; }
+
+.badge { display: inline-block; padding: 4px 8px; font-size: 0.75rem; font-weight: 700; border-radius: 4px; text-transform: uppercase; margin-bottom: 15px; }
+.badge-danger { background: #fee2e2; color: #ef4444; }
+.badge-warning { background: #fef3c7; color: #d97706; }
+
+.card h3 { margin-bottom: 8px; color: var(--dark-navy); }
+.loc { font-size: 0.85rem; color: var(--text-slate); margin-bottom: 15px; }
+.card p { font-size: 0.95rem; line-height: 1.5; color: #475569; margin-bottom: 20px; }
+
+.progress-bar { background: #e2e8f0; height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 8px; }
+.progress { background: var(--primary); height: 100%; }
+.progress-txt { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-slate); margin-bottom: 20px; font-weight: 500; }
+
+.card-btn { display: block; text-align: center; background: var(--dark-navy); color: #ffffff; padding: 12px; text-decoration: none; border-radius: 6px; font-weight: 600; transition: 0.2s; }
+.card-btn:hover { background: var(--primary); color: var(--dark-navy); }
+
+/* ========================================================
+   SHARED SLATE FOOTER COMPONENT
+   ======================================================== */
+.main-footer { background-color: var(--dark-navy); color: #ffffff; padding: 60px 10% 20px 10%; }
+.footer-columns { display: flex; gap: 50px; justify-content: space-between; flex-wrap: wrap; margin-bottom: 40px; }
+.footer-col { flex: 1; min-width: 200px; display: flex; flex-direction: column; }
+.footer-col h3 { color: var(--primary); font-size: 1.1rem; margin-bottom: 20px; }
+.footer-col a { color: #cbd5e1; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; transition: color 0.2s; }
+.footer-col a:hover { color: var(--primary); }
+.mission-col { flex: 2; min-width: 280px; }
+.mission-col p { color: #cbd5e1; line-height: 1.6; font-size: 0.95rem; }
+.copyright { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; color: #94a3b8; font-size: 0.85rem; }

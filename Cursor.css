@@ -1,0 +1,11 @@
+/* Apply the custom cursor to the entire website */
+body {
+  /* Replace the URL with your own custom cursor image file */
+  /* Keep the image size small (recommended: 32x32 pixels) */
+  cursor: url('https://example.com'), auto;
+}
+
+/* Change the cursor to a specific "helpful" icon when hovering over interactive items */
+a, button, .aid-card, .btn {
+  cursor: url('https://example.com'), pointer;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Community Aid</title>
+ <!-- Change the lower-case c to a capital C to match your file name exactly -->
+<link rel="stylesheet" href="Contact-Style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">COMMUNITY AID</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="blog.html">Blog</a>
+      <a href="Courses.html">Courses</a>
+      <a href="Contact.html" class="active">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Form Layout Container -->
+  <section class="contact-container">
+    <div class="contact-info-panel">
+      <h2>Let's Coordinate Support</h2>
+      <p>Are you a local community leader requiring assistance supplies, or an organization wanting to sponsor a verified appeal campaign?</p>
+      <div class="info-meta">
+        <p><strong>Primary Response Office:</strong> Manolo Fortich, Bukidnon, Philippines</p>
+        <p><strong>Official Email:</strong> jabutayw@helpinghand.com</p>
+        <p><strong>Response Target:</strong> Under 24 Business Hours</p>
+      </div>
+    </div>
+
+    <!-- Connected Formspree Panel (Fully Functional) -->
+    <div class="form-panel">
+      <form action="https://formspree.io/f/maqgovgy" method="POST">
+        
+        <div class="form-group">
+          <label for="name">Full Name / Organization</label>
+          <!-- The name attribute dictates the label text inside the email notification -->
+          <input type="text" id="name" name="Full Name" placeholder="Winonah Jabutay" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="_replyto" placeholder="Jabutay@example.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="type">I am reaching out to:</label>
+          <select id="type" name="Inquiry Type">
+            <option value="Sponsorship">Offer Financial or Supply Sponsorship</option>
+            <option value="Aid Request">Request Emergency Community Aid</option>
+            <option value="Volunteer">Enroll in Volunteer Field Teams</option>
+            <option value="General">General Support Inquiry</option>
+			<option value="Other">Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="msg">Your Message</label>
+          <textarea id="msg" name="Message Content" rows="5" placeholder="Provide details on requests or community projects." required></textarea>
+        </div>
+
+    
+        <input type="text" name="_gotcha" style="display:none">
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </section>
+
+ 
+  <footer class="main-footer">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="Contact.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <a href="blog.html">Our Blog</a>
+        <a href="Courses.html">Training Courses</a>
+      </div>
+      <div class="footer-col mission-col">
+        <h3>Our Mission</h3>
+        <p>Bridging the gap between active donors and regional communities requiring transparency, aid, and essential education.</p>
+      </div>
+    </div>
+    <div class="copyright">
+     2026 Community Aid Platform. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
